@@ -43,3 +43,23 @@ const goToLocation = (
 
 // alternatively, non-named tuple
 const goToLocation1 = (coordinates: [number, number, number?]) => {};
+
+const userMap = new Map<number, { name: string; age: number }>();
+
+userMap.set(1, { name: "Max", age: 30 });
+
+userMap.set(2, { name: "Manuel", age: 31 });
+
+// userMap.set("3", { name: "Anna", age: 29 });
+
+// userMap.set(3, "123");
+
+// const parsedData = JSON.parse<{
+//   Expected 0 type arguments, but got 1.
+//     name: string;
+//     age: number;
+//   }>('{"name": "Alice", "age": 30}');
+const parsedData: {
+  name: string;
+  age: number;
+} = JSON.parse('{"name": "Alice", "age": 30}');
