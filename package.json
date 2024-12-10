@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@total-typescript/helpers": "^0.0.1",
+    "vitest": "^2.1.8"
+  }
+}

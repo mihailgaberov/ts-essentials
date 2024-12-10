@@ -1,8 +1,10 @@
-var func = function () {
-  // Refactor this to be its own function
-  var randomPercentage = generateRandomPercentage();
-  console.log(randomPercentage);
+"use strict";
+const func = () => {
+    // Refactor this to be its own function
+    const randomPercentage = generateRandomPercentage();
+    console.log(">>> random percentage: ", randomPercentage);
 };
 function generateRandomPercentage() {
-  return "".concat((Math.random() * 100).toFixed(2), "%");
+    return `${(Math.random() * 100).toFixed(2)}%`;
 }
+func();
